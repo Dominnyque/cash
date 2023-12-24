@@ -1,0 +1,1902 @@
+Traceback (most recent call last):
+  File "/home/rexohost/cash/passenger_wsgi.py", line 1, in <module>
+    from cash.wsgi import application
+  File "/home/rexohost/cash/cash/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+Traceback (most recent call last):
+  File "/home/rexohost/cash/passenger_wsgi.py", line 1, in <module>
+    from cash.wsgi import application
+  File "/home/rexohost/cash/cash/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ModuleNotFoundError: No module named 'django'
+[UID:1011][1075754] Child process with pid: 1075757 was killed by signal: 15, core dumped: no
+Invalid HTTP_HOST header: 'cash.rexobox.net'. You may need to add 'cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'cash.rexobox.net'. You may need to add 'cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 434, in full_clean
+    self._clean_form()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 250, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/decorators/debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/environ/environ.py", line 388, in get_value
+    value = self.ENVIRON[var_name]
+            ~~~~~~~~~~~~^^^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'SECRET_KEY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/cash/passenger_wsgi.py", line 1, in <module>
+    from cash.wsgi import application
+  File "/home/rexohost/cash/cash/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 102, in __getattr__
+    self._setup(name)
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 217, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/cash/cash/settings.py", line 23, in <module>
+    SECRET_KEY = env('SECRET_KEY')
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/environ/environ.py", line 199, in __call__
+    return self.get_value(
+           ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/environ/environ.py", line 392, in get_value
+    raise ImproperlyConfigured(error_msg) from exc
+django.core.exceptions.ImproperlyConfigured: Set the SECRET_KEY environment variable
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/environ/environ.py", line 388, in get_value
+    value = self.ENVIRON[var_name]
+            ~~~~~~~~~~~~^^^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'SECRET_KEY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/cash/passenger_wsgi.py", line 1, in <module>
+    from cash.wsgi import application
+  File "/home/rexohost/cash/cash/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 102, in __getattr__
+    self._setup(name)
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 217, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/cash/cash/settings.py", line 23, in <module>
+    SECRET_KEY = env('SECRET_KEY')
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/environ/environ.py", line 199, in __call__
+    return self.get_value(
+           ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/environ/environ.py", line 392, in get_value
+    raise ImproperlyConfigured(error_msg) from exc
+django.core.exceptions.ImproperlyConfigured: Set the SECRET_KEY environment variable
+[UID:1011][1082797] Child process with pid: 1082808 was killed by signal: 15, core dumped: no
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 3306 failed: received invalid response to SSL negotiation: J
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (127.0.0.1), port 3306 failed: received invalid response to SSL negotiation: J
+
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1045, "1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)", '28000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1045, "1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)", '28000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on 'localhost:1045' (99)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'localhost:1045' (99)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.DatabaseError: (2003, "2003 (HY000): Can't connect to MySQL server on 'localhost:1045' (99)", 'HY000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1045, "1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)", '28000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1045, "1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)", '28000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1045, "1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)", '28000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 308, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
+    self.connect()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 399, in get_new_connection
+    cnx = mysql.connector.connect(**conn_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 129, in __init__
+    self.connect(**kwargs)
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/abstracts.py", line 1237, in connect
+    self._open_connection()
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 313, in _open_connection
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1045, "1045 (28000): Access denied for user 'rexohost_cashmasterbase'@'localhost' (using password: NO)", '28000')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 639, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Table 'rexohost_cashmastersql.leads_user' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 172, in execute
+    return self.cursor.execute(query, new_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 647, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'rexohost_cashmastersql.leads_user' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 172, in execute
+    return self.cursor.execute(query, new_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 647, in cmd_query
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1146, "1146 (42S02): Table 'rexohost_cashmastersql.leads_user' doesn't exist", '42S02')
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 639, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Table 'rexohost_cashmastersql.leads_user' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 172, in execute
+    return self.cursor.execute(query, new_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 647, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1146 (42S02): Table 'rexohost_cashmastersql.leads_user' doesn't exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/views/generic/edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 196, in errors
+    self.full_clean()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 433, in full_clean
+    self._clean_fields()
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/forms/forms.py", line 448, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 163, in clean_username
+    and self._meta.model.objects.filter(username__iexact=username).exists()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/query.py", line 598, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/django/base.py", line 172, in execute
+    return self.cursor.execute(query, new_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib64/python3.11/site-packages/mysql/connector/connection_cext.py", line 647, in cmd_query
+    raise get_mysql_exception(
+django.db.utils.ProgrammingError: (1146, "1146 (42S02): Table 'rexohost_cashmastersql.leads_user' doesn't exist", '42S02')
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: A lead has been created
+From: test@example.com
+To: test2@example.com
+Date: Fri, 22 Dec 2023 08:01:26 -0000
+Message-ID: <170323208664.1098267.15990580719836431145@cloud.rexosoft.com>
+
+Please go to the site to see the new lead
+-------------------------------------------------------------------------------
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.rexobox.net'. You may need to add 'www.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.rexobox.net'. You may need to add 'www.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /cash.rexobox.net/
+Not Found: /favicon.ico
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: You are invited to be an agent
+From: admin@test.net
+To: dackymin@gmail.com
+Date: Fri, 22 Dec 2023 14:02:17 -0000
+Message-ID: <170325373759.1177420.13684245168016538086@cloud.rexosoft.com>
+
+ You were added as an agent to Cas CRM. Please login to view your tas
+-------------------------------------------------------------------------------
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/rexohost/virtualenv/cash/3.11/lib/python3.11/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.cash.rexobox.net'. You may need to add 'www.cash.rexobox.net' to ALLOWED_HOSTS.
+Bad Request: /

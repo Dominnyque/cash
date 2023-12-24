@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load tailwind_filters %}
+{% block content %}
+<div class="max-w-lg mx-auto">
+  <a class="flex text-white bg-indigo-500 border-0 mt-9 mb-9 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" href="{% url 'agents:agent-details' agent.pk %}">&#8592;  Return to {{agent.user.username}} profile</a><hr>
+  <h1>&#9888; Are you sure you want to Delete agent {{agent.user.username}} ?</h1>
+    <form method="POST">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <button type="submit" class="inline-flex text-white bg-red-500 border-0 py-2 px-6 mt-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Delete</button>
+      <a class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" href="{% url 'agents:agent-details' agent.pk %}">Go back</a>
+      
+    </form>
+  </div>
+    {% endblock %}
