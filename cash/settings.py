@@ -28,7 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-ALLOWED_HOSTS = ['cash.rexobox.net']
+ALLOWED_HOSTS = ['cash.rexobox.net', '127.0.0.1']
+SECURE_SSL_REDIRECT = True
 
 
 # Application definition
